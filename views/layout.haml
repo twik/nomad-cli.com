@@ -18,11 +18,11 @@
       %div{role: 'container'}
         %hgroup
           %h1 Nomad
-          %h2 World-class command line utilities for iOS development
+          %h2 world-class command line utilities for iOS development
 
         - for library in [:cupertino, :houston, :dubai, :venice, :shenzhen]
-          %a{href: "##{library}"}
-            %img{src: "/images/#{library}.svg", width: "100"}
+          %a{href: "##{library}", title: "#{library}".capitalize}
+            %img{src: "/images/#{library}.svg", width: 100, alt: "#{library}".capitalize}
 
     %article
       %div{role: 'container'}

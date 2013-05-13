@@ -11,13 +11,12 @@ html body
   margin-bottom: 2em
   font-size: 125%
 
+
+
   a
     &:visited, &:hover, &:active
     color: #333 !important
     text-decoration: none
-
-    &:hover
-      text-decoration: underline
 
 [role="container"]
   +container
@@ -30,8 +29,6 @@ header
   +box-shadow(#d2d2d2 0px -1px 10px inset)
 
   hgroup
-
-
     h1
       font-size: 5em
       margin-bottom: 0.25em
@@ -61,7 +58,13 @@ section
   p
     width: +span(24)
 
+    a:hover
+      text-decoration: underline
+
 footer
   margin-top: 180px
   font-size: 75%
   text-align: center
+
+.wf-loading
+  visibility: hidden
