@@ -1,0 +1,64 @@
+@import "compass"
+@import "blueprint"
+
++global-reset
++blueprint
+
+html body
+  background: #fcfcfc
+  font-family: "Helvetica Neue", Helvetica, sans-serif
+  color: #777 !important
+  margin-bottom: 2em
+  font-size: 125%
+
+  a
+    &:visited, &:hover, &:active
+    color: #333 !important
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+[role="container"]
+  +container
+
+header
+  background: #e6e6e6
+  padding: 5em 0 3em 0
+  +box-shadow(#d2d2d2 0px -1px 10px inset)
+
+  hgroup
+    text-align: center
+
+    h1
+      font-size: 5em
+      margin-bottom: 0.25em
+
+    h2
+      font-size: 1.5em
+      color: #777
+
+  img
+    padding: 4%
+
+section
+  +clearfix
+
+  margin-bottom: 5em
+
+  img
+    float: left
+    width: +span(6)
+    height: +span(10)
+    margin-right: +span(2)
+
+  h1
+    margin-top: 140px
+    text-transform: uppercase
+
+  p
+
+footer
+  margin-top: 180px
+  font-size: 75%
+  text-align: center

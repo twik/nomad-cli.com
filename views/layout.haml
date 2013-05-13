@@ -1,0 +1,36 @@
+!!! 5
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %title Nomad
+    %meta{name: "author", content: "Mattt Thompson"}
+    %meta{name: "description", content: ""}
+    %link{rel: "stylesheet", href: "/css/screen.css", type: 'text/css', media: "screen", charset: "utf-8"}
+
+    %meta{property: "og:title", content: "Nomad"}
+    %meta{property: "og:url", content: "http://nomad-cli.com"}
+    %meta{property: "og:image",  content: "http://nomad-cli.com/images/houston.png"}
+    %meta{property: "og:site_name", content: "Nomad"}
+    %meta{property: "og:description", content: "Nomad is a series of command line utilities for developing iOS apps."}
+
+  %body
+    %header
+      %div{role: 'container'}
+        %hgroup
+          %h1 Nomad
+          %h2 World-class command line utilities for iOS development
+
+        - for library in [:cupertino, :houston, :dubai, :venice, :shenzhen]
+          %a{href: "##{library}"}
+            %img{src: "/images/#{library}.svg", width: "100"}
+
+    %article
+      %div{role: 'container'}
+        = yield
+
+        %footer
+          :markdown
+            © 2013 [Mattt Thompson](http://mattt.me)
+
+            Illustrations by [Gustav Holtz](http://gustavholtz.com)
+
