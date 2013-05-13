@@ -1313,8 +1313,12 @@ section h1 {
   margin-top: 140px;
   text-transform: uppercase;
 }
+/* line 61, ../sass/screen.sass */
+section p {
+  width: 950px;
+}
 
-/* line 63, ../sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 footer {
   margin-top: 180px;
   font-size: 75%;
