@@ -1321,8 +1321,9 @@ section {
   overflow: hidden;
   *zoom: 1;
   padding: 2.5em 0;
+  padding-left: 310px;
 }
-/* line 70, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 section img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1330,19 +1331,15 @@ section img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  float: left;
+  position: absolute;
   width: 230px;
   height: 390px;
-  margin-right: 70px;
+  margin-left: -310px;
 }
-/* line 77, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 section h1 {
   margin-top: 140px;
   text-transform: uppercase;
-}
-/* line 81, ../sass/screen.sass */
-section p {
-  width: 950px;
 }
 
 /* line 84, ../sass/screen.sass */
