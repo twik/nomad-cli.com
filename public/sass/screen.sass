@@ -36,11 +36,11 @@ html body
   +container
 
 header
+  +box-shadow(#d2d2d2 0px -1px 10px inset)
+  +text-shadow(#eee 0px -1px 1px)
   background: #e6e6e6
   padding: 5em 0 3em 0
   text-align: center
-
-  +box-shadow(#d2d2d2 0px -1px 10px inset)
 
   hgroup
     h1
@@ -54,6 +54,13 @@ header
   img
     +prevent-selection
     padding: 1em 1.5em
+
+  code
+    color: #333
+    font-family: "Meslo", Menlo, Courier, monospace
+    display: block
+    clear: both
+    margin-top: 2em
 
 section
   +clearfix

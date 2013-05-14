@@ -24,6 +24,9 @@
           %a{href: "##{library}", title: "#{library}".capitalize}
             %img{src: "/images/#{library}.svg", width: 100, alt: "#{library}".capitalize}
 
+        %code
+          $ gem install nomad-cli
+
     %article
       %div{role: 'container'}
         = yield
