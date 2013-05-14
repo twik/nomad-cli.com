@@ -4,12 +4,25 @@
 +global-reset
 +blueprint
 
+=prevent-selection
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
 html body
   background: #fcfcfc
   font-family: "Helvetica Neue", Helvetica, sans-serif
   color: #777 !important
   margin-bottom: 2em
   font-size: 125%
+
+  ::selection, ::-moz-selection
+    +text-shadow(0 1px 1px #222)
+    background: #777
+    color: #fff
 
   a
     color: #333 !important
@@ -39,14 +52,16 @@ header
       color: #777
 
   img
+    +prevent-selection
     padding: 1em 1.5em
 
 section
   +clearfix
 
-  margin-bottom: 5em
+  padding: 2.5em 0
 
   img
+    +prevent-selection
     float: left
     width: +span(6)
     height: +span(10)
